@@ -1,0 +1,15 @@
+function transform (x) {
+  
+  if (x.length < 3) {
+    return x.toUpperCase();
+  }
+  
+  var front = x.substring(0, 3).toLowerCase();
+  var back = x.substring(3, x.length);
+  
+  return front + back;
+}
+
+console.log(transform("Python"));
+console.log(transform("Py"));
+console.log(transform("JAVAScript"));

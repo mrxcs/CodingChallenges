@@ -1,0 +1,9 @@
+   "HelloWorld!"
+      
+      <button onclick="callPrinter()">Imprimir</button>
+
+
+
+function callPrinter () {
+  window.print();
+}

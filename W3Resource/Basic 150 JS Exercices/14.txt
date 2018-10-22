@@ -1,0 +1,6 @@
+filename = "system.php"
+console.log(filename.split('.').pop());
+filename = "a.bc.js"
+console.log(filename.split('.').pop());
+
+//The pop() method removes the last element of an array, and returns that element. 

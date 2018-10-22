@@ -1,0 +1,14 @@
+function swap(sample) {
+  
+  if (sample.length <= 1){
+    return sample;
+  }
+  var first = sample.substring(0,1);
+  var last = sample.substring(sample.length - 1, sample.length);
+  var out = last + sample.substring(1, sample.length -1) + first;
+  return out;
+}
+
+console.log(swap('a'));
+console.log(swap('ab'));
+console.log(swap('abc'));

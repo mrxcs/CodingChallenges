@@ -1,0 +1,14 @@
+function isIn (x, y, z) {
+  var i;
+  
+  for (i of arguments) {
+    if (i >= 50 && i<= 90) {
+      return true;
+    }
+  }
+  
+  return false;
+}
+
+console.log(isIn(51,5,3));
+console.log(isIn(5,3,1));

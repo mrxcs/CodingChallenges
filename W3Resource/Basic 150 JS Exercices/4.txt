@@ -1,0 +1,6 @@
+console.log(formulaHeron(5,6,7));
+
+function formulaHeron(a,b,c) {
+  var p = (a+b+c)/2;
+  return Math.sqrt(p*(p-a)*(p-b)*(p-c));
+}

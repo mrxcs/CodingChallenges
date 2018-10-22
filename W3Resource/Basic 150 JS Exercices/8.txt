@@ -1,0 +1,5 @@
+var num = Math.ceil(Math.random*10);
+
+var input = prompt('Advinhe o número entre 1 a 10');
+
+var out = (num == input) ? alert("Acertou, mizeravi!") : alert("Só que não");

@@ -1,0 +1,17 @@
+function find (x,y) {
+  var i;
+  
+  for (i of arguments) {
+    if (!(i >= 40 && i <=60)) {
+      return false;
+    }
+  }
+  
+  var out = (x > y) ? x : y;
+  
+  return out;
+}
+
+console.log(find(45, 60));
+console.log(find(25, 60));
+console.log(find(45, 80));

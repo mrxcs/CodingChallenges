@@ -1,0 +1,16 @@
+function is15 (x, y) {
+  
+  if (x == 15 || y == 15 || Math.abs(x-y) == 15 || x+y == 15 ) {
+    return true;
+  }
+  
+  return false;
+}
+
+console.log(is15(15, 9));
+console.log(is15(25, 15));
+console.log(is15(7, 8));
+console.log(is15(25, 10));
+console.log(is15(5, 9));
+console.log(is15(7, 9));
+console.log(is15(9, 25));

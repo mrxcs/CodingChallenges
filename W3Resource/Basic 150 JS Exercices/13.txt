@@ -1,0 +1,6 @@
+﻿Toda variável fora de um escopo é uma variavél global pertencente
+ao objeto 'window'.
+
+Every variable outside a scope is a global variable belonging to
+to the 'window' object.
+

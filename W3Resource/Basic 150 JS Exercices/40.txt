@@ -1,0 +1,19 @@
+function isEight (x, y) {
+  
+  for (let i of arguments) {
+    if (i == 8) {
+      return true;
+    }
+  }
+  
+  if (x+y == 8 || Math.abs(x-y) == 8) {
+    return true;
+  }
+  
+  return false;
+}
+
+console.log(isEight(7, 8));
+console.log(isEight(16, 8));
+console.log(isEight(24, 32));
+console.log(isEight(17, 18));

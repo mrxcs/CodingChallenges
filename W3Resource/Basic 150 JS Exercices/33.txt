@@ -1,0 +1,18 @@
+function range (x,y) {
+  
+  if ((x >= 40 && x <=60) &&
+      (y >= 40 && y <=60)) {
+    return true;
+  }
+  else if  ((x >= 70 && x <=100) &&          
+	    (y >= 70 && y <=100)) {
+    return true;
+  }
+  
+  return false;
+}
+
+console.log(range(44, 56));
+console.log(range(70, 95));
+console.log(range(50, 89));
+

@@ -1,0 +1,8 @@
+function stJava(sample) {
+  
+  return sample.startsWith('Java');
+  
+}
+
+console.log(stJava('Javascript'));
+console.log(stJava('script'));

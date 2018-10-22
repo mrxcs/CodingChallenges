@@ -1,0 +1,13 @@
+var element = document.getElementById('teste');
+
+setInterval(function () { change(element.innerHTML)}, 100);
+
+function change(str){
+  var text = str.substring (str.length -1) +
+    str.substring (0, str.length - 1);
+  element.innerHTML = text;
+}
+
+
+
+<div id="teste">w3resource </div>

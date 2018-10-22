@@ -1,0 +1,14 @@
+function biggest (x, y ,z) {
+  var out = x;
+  var i;
+  
+  for (i of arguments) {
+    if (i > out) {
+      out = i;
+    }
+  }
+  
+  return out;
+}
+
+console.log(biggest(1,5,3));

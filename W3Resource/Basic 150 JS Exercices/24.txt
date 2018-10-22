@@ -1,0 +1,9 @@
+function create(n) {
+
+  var char = n.substring(0,1);
+  
+  return char +n + char;
+  
+}
+
+console.log(create("coisa"));

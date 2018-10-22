@@ -1,0 +1,11 @@
+var hoje = new Date();
+
+var nextXmasYear = (hoje.getMonth() == 11 && hoje.getDate() > 25) ? hoje.getFullYear()+1 : hoje.getFullYear(); 
+
+var xmas = new Date(nextXmasYear, 11, 25);
+
+var diaEmMiliSec = 24*60*60*1000;
+
+var daysLeft = Math.ceil((xmas.getTime() - hoje.getTime()) / diaEmMiliSec);
+
+console.log("Faltam "+daysLeft+" dias para o Natal.");

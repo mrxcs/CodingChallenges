@@ -1,0 +1,30 @@
+function check (x, y, z) {
+  
+  for (let i of arguments) {
+    if (!(i > 0)) {
+      return false;
+    }
+  }
+  
+  x = x.toString().trim();
+  
+  var base = x.substring(x.length -1,x.length);
+
+  
+  for (let i of arguments) {
+    
+    i = i.toString().trim();
+    var last = i.substring(i.length -1,i.length);
+    
+    if (last != base) {
+      return false;
+    }
+    
+  }
+  return true;
+}
+
+console.log(check( 20, 30, 400));
+console.log(check(-20, 30, 400));
+console.log(check(20, -30, 400));
+console.log(check(20, 30, -400));

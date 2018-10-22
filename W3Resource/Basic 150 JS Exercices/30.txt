@@ -1,0 +1,21 @@
+function remove(sample) {
+  
+  if (sample.length < 6 ) {
+    return sample;
+  }
+  
+  var lowSample = sample.toLowerCase();
+  
+  var target = 'script';
+  
+  if (lowSample.indexOf(target, 4) > -1) {
+    var out = sample.substring(0, 4) + 
+        sample.substring(4 + target.length);
+    return out;
+  }
+  
+  return sample 
+}
+
+console.log(remove('Javascript'));
+

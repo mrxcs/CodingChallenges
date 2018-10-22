@@ -1,0 +1,37 @@
+<div>
+  <input type="text" id="No_1"></input>
+  <input type="text" id="No_2"></input>
+  <button onClick="mult()">Multiplicar</button>
+  <button onClick="div()">Dividir</button>
+  <p id="out"></p>
+</div>
+
+
+
+
+
+
+var n1 = document.getElementById('No_1');
+
+var n2 = document.getElementById('No_2');
+
+var res = document.getElementById('out');
+
+function mult() {
+  res.innerHTML = (n1.value * n2.value);
+}
+
+function div() {
+  res.innerHTML = (n1.value / n2.value);
+}
+
+
+
+
+
+
+
+
+
+
+

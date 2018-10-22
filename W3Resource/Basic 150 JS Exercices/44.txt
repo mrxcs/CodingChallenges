@@ -1,0 +1,19 @@
+function isOk (x, y, z) {
+  
+  for (let i of arguments) {
+    if (i < 0) {
+      return false;
+    }
+  }
+  
+ if (x >=20 && x < y || x < z) {
+   return true;
+ }
+ 
+  return false;
+}
+
+console.log(isOk(23, 45, 10));
+console.log(isOk(23, 23, 10));
+console.log(isOk(21, 66, 75));
+

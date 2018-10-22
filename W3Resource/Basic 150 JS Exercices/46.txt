@@ -1,0 +1,21 @@
+function isIt (x, y) {
+  
+  for (let i of arguments) {
+    if (i < 0) {
+      return false;
+    }
+  }
+  
+  var isX = (x % 7 == 0 || x % 11 == 0);
+  var isY = (y % 7 == 0 || y % 11 == 0);
+  
+  return (isX != isY);
+
+}
+
+
+
+console.log(isIt(2, 10));
+console.log(isIt(11, 1));
+console.log(isIt(1, 11));
+

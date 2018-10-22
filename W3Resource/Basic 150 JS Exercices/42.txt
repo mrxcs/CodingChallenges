@@ -1,0 +1,18 @@
+function order (x, y, z) {
+  
+  if (x < y && y < z) {
+    return "strict mode";
+  }
+  
+  else if (y < z) {
+    return "soft mode";
+  }
+  
+  else {
+    return 'none';
+  }
+}
+
+console.log(order(10,15,31));
+console.log(order(24,22,31));
+console.log(order(50,21,15));

@@ -1,0 +1,10 @@
+function contains50(x,y) {
+  if (x == 50 || x + y == 50) {
+    return true;
+  }
+  return false;
+} 
+
+console.log(contains50(25,25));
+console.log(contains50(50,5));
+console.log(contains50(5,5));

@@ -1,0 +1,12 @@
+function isA (marks, isFinal) {
+  
+  if (isFinal) {
+    return (marks >= 90);
+  }
+  
+  return (marks >= 89 && marks <= 100);
+}
+
+console.log(isA("78", " "));
+console.log(isA("89", "true "));
+console.log(isA("99", "true "));

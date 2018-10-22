@@ -1,0 +1,24 @@
+<div>
+  <input id="valor"></input>
+  <button id="toC" onClick="toC()">para Cº</button> 
+  <button id="toF" onClick="toF()">para Fº</button> 
+  <p id="out"></p>
+</div>
+
+
+
+
+
+var valor = document.getElementById('valor');
+
+var out = document.getElementById('out');
+
+function toC() {
+  var result = (valor.value-32)*5/9;
+  out.innerHTML = result +" C º";
+}
+
+function toF() {
+    var result = (9 * valor.value)/5+32;
+  out.innerHTML = result +" F º";
+}

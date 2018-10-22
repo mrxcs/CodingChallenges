@@ -1,0 +1,7 @@
+function isMult (n) {
+  
+  var out = (n % 3 == 0) ? true : (n % 7 == 0);
+  return out;
+}
+
+console.log(isMult(7));

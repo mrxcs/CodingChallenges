@@ -1,0 +1,38 @@
+function rightmost (x, y, z) {
+  
+  for (let i of arguments) {
+    if (i < 0) {
+      return false;
+    }
+  }
+  
+  x = x.toString();
+  y = y.toString();
+  z = z.toString();
+  
+  var xDig = x.slice(x.length - 1, x.length);
+  var yDig = y.slice(y.length - 1, y.length);
+  var zDig = z.slice(z.length - 1, z.length);
+  
+  if ( xDig == yDig || xDig == zDig ) {
+    return true;
+  }
+  
+  return false;
+ 
+}
+
+console.log(rightmost(22,32,42));
+console.log(rightmost(102,302,2));
+console.log(rightmost(20,22,45));
+
+/*
+
+function same_last_digit(p, q, r) {
+    return (p % 10 === q % 10) ||
+           (p % 10 === r % 10) ||
+           (q % 10 === r % 10);
+           
+}
+
+/*

@@ -1,0 +1,6 @@
+function isIn (n) {
+  return (n >= 50 && n<= 90);
+}
+
+console.log(isIn(51));
+console.log(isIn(5));

@@ -1,0 +1,9 @@
+function closest (x,y) {
+  var a = 100-x;
+  var b = 100-y;
+  var out = (a >= b) ? y : x;
+  
+  return out;
+}
+
+console.log(closest(11,90));

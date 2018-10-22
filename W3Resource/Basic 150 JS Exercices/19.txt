@@ -1,0 +1,19 @@
+function sobra(n) {
+  
+  if (Math.abs(n - 100) <= 20 || Math.abs(n - 400) <= 20) {
+    return true;
+  }
+  return false;
+}
+
+console.log(sobra(10));
+console.log(sobra(90));
+console.log(sobra(99));
+console.log(sobra(199));
+console.log(sobra(200));
+
+/*false
+true
+true
+false
+false*/

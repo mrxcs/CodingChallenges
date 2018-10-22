@@ -1,0 +1,10 @@
+window.onload = function () {
+  
+  var i, data;
+  for (i = 2014; i < 2051 ; i++) {
+    data = new Date(i,0,1);
+    if (data.getDay() === 0) {
+      console.log("1st January is being a Sunday  "+i);
+    }
+  } 
+};

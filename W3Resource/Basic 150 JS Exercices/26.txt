@@ -1,0 +1,13 @@
+function plus(sample) {
+  if (sample.length < 3) {
+    return sample;
+  }
+  
+  var char = sample.substring(sample.length - 3, sample.length);
+  
+  var out = char + sample + char;
+  
+  return out;
+}
+
+console.log(plus('amostra'));

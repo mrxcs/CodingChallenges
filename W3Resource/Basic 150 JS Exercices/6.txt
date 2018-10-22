@@ -1,0 +1,19 @@
+var year = 2000;
+
+alert(bisexto(year));
+
+function bisexto(num){
+  if (num/2 == false) {
+    return false;
+  }
+  if (!(num % 4 === 0)) {
+    return false;
+  } 
+  if (!(num % 100 === 0)) {
+    return false;
+  } 
+  if (!(num % 400 === 0)) {
+    return false;
+  }
+  return true;
+}

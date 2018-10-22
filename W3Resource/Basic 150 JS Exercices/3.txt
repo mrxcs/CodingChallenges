@@ -1,0 +1,10 @@
+//dd-mm-yyyy
+
+var d = new Date(); 
+
+console.log(doisNum(d.getDate())+"/"+doisNum(d.getMonth()+1)+"/"+doisNum(d.getFullYear()));
+
+function doisNum(num) {
+ var result = (num > 9) ? num : "0" + num;
+  return result;
+}

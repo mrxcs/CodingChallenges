@@ -1,0 +1,16 @@
+var data = new Date();
+
+var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+
+console.log("Today is: " + daylist[data.getDay()]);
+
+var sufixo = (data.getHours() >= 12) ? "PM" : "AM";
+
+var dozeHoras = (data.getHours() > 12) ? data.getHours() - 12 : data.getHours();
+
+console.log("Current time is : "+ doisDigitos(dozeHoras) +" "+sufixo+ " : " + doisDigitos(data.getMinutes())+ " : " + doisDigitos(data.getSeconds()));
+
+function doisDigitos(num) {
+ var result = (num > 9) ? num : "0" + num;
+  return result;
+}

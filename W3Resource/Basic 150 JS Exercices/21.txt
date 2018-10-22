@@ -1,0 +1,7 @@
+function addPy(sample) {
+ var out = (sample.startsWith('Py')) ? sample : 'Py' + sample;
+  return out;
+}
+
+console.log(addPy("Python"));
+console.log(addPy("thon"));

@@ -1,0 +1,12 @@
+function diferenca (n) {
+  if (n <= 13) {
+    return 13 - n;
+  }
+  else {
+    return (n - 13) * 2;
+  }
+}
+
+console.log(diferenca(10));
+
+console.log(diferenca(14));

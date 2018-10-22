@@ -1,0 +1,14 @@
+function removeChar(sample, index) {
+  var out = sample.slice(0,index) + sample.slice(index+1,sample.lenth);
+  return out;
+}
+
+console.log(removeChar("Python",0));
+console.log(removeChar("Python",3));
+console.log(removeChar("Python",5));
+
+/*Expected
+ython
+Pyton
+Pytho
+*/

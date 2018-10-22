@@ -1,0 +1,14 @@
+function dif (x) {
+ 
+  var i = Math.abs(x - 19);
+  
+  if (i > 19) {
+    return i * 3;
+  } 
+  else {
+    return i;
+  }
+}
+
+console.log(dif(119));
+console.log(dif(1));

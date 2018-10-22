@@ -1,0 +1,16 @@
+function areSame (x, y ,z) {
+  
+  if ( x==y && y==z ) {
+    return 30;
+  }
+  
+  else if ( x==y || x==z || y==z) {
+    return 20;
+  }
+  
+  return 40; 
+}
+
+console.log(areSame(8, 8, 8));
+console.log(areSame(8, 8, 18));
+console.log(areSame(8, 7, 18));
